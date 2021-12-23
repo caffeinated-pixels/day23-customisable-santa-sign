@@ -10,7 +10,9 @@
   <body>
     <div class="container">
       <p id="sign" class="sign">
-        🎅 <span id="message" class="message">Santa Stop Here!</span> ☃️
+        <span id="left-emoji">🎅</span>
+        <span id="message" class="message">Santa Stop Here!</span>
+        <span id="right-emoji">☃️</span>
       </p>
     </div>
 
@@ -22,6 +24,18 @@
       name="text"
       maxlength="25"
     />
+    <label for="left-emoji-select">Left emoji:</label>
+    <select id="left-emoji-select">
+      <option value="🎅">🎅</option>
+      <option value="🤶">🤶</option>
+      <option value="🦌">🦌</option>
+    </select>
+    <label for="right-emoji-select">Right emoji:</label>
+    <select id="right-emoji-select">
+      <option value="☃️">☃️</option>
+      <option value="🎁">🎁</option>
+      <option value="🎄">🎄</option>
+    </select>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,10 +1,23 @@
 const textInput = document.getElementById('text-input')
 const messageDisplay = document.getElementById('message')
+const leftEmoji = document.getElementById('left-emoji')
+const rightEmoji = document.getElementById('right-emoji')
+
+const leftEmojiSelect = document.getElementById('left-emoji-select')
+const rightEmojiSelect = document.getElementById('right-emoji-select')
+
+leftEmojiSelect.addEventListener('change', (e) => changeEmoji(e, leftEmoji))
+rightEmojiSelect.addEventListener('change', (e) => changeEmoji(e, rightEmoji))
 
 textInput.addEventListener('input', updateMessage)
 
 function updateMessage(e) {
   messageDisplay.textContent = e.target.value.trim()
+}
+
+function changeEmoji(e, emojiDisplay) {
+  console.log(e.target.value, emojiDisplay)
+  emojiDisplay.textContent = e.target.value
 }
 
 // Task:
