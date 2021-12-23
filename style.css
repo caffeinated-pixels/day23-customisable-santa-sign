@@ -36,6 +36,10 @@ body {
   padding: 1em;
   min-width: 450px;
   font-size: 45px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 label {
