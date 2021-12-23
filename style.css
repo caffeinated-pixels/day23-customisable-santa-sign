@@ -64,3 +64,13 @@ label {
   padding: 0.5em 1em;
   font-size: 1.5rem;
 }
+
+.selectors {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+select {
+  font-size: 2.5rem;
+}
