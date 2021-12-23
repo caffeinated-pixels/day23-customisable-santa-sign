@@ -19,7 +19,16 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--light-green);
-  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 95%;
+  max-width: 600px;
+  display: flex;
+
+  align-items: center;
 }
 
 .sign,
@@ -33,13 +42,16 @@ body {
 
 .sign {
   border: 5px solid var(--wine-red);
-  padding: 1em;
-  min-width: 450px;
+  padding: 0.5em;
   font-size: 45px;
-
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.message {
+  text-align: center;
 }
 
 label {
